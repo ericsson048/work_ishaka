@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior:smooth ;
+    font-family: 'poppins',sans-serif;
+}
+:root {
+    --bg-color:#fdfdfd;
+    --text-color:#333;
+    --main-color:#754ef9;
+    --white-color:#fdfdfd;
+    --shadow-color:rgba(0,0,0, .2);
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: #764ef9af;
+    border-radius: 6px;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--bg-color);
+    box-shadow: 0 5px 10px #754ef9;
+    
+}
+.liens{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;    
+}
+.logo{
+    width: 80px;
+    position: absolute;
+    right: 94%;
+    top: 5px;
+}
+.link{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    right: 8%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+.link a{
+    color: var(--text-color);
+}
+.conta button{
+    width: 160px;
+    height: 30px;
+    background-color: var(--main-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+    position: absolute;
+    right: -15%;
+    top: -4px;
+
+}
+/*body content*/
+.acceuil{
+    background-color: #f8f7fcd3;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.2rem;
+}
+.acceuil h3{
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+.acceuil p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nous{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 500px;
+}
+.nous h3{
+    color: rgb(231, 156, 143);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.items .img img{
+    width: 400px;
+    height: 400px;
+}
+.items .nou{
+    width: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* actu*/
+.actu {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ;
+}
+.vite img{
+    width: 300px;
+    height: 200px;
+    border-top:10px ;
+}
+.activites{
+    background-color: #764ef96e;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.activites h3{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(243, 148, 198);
+}
+.vite{
+    background-color: var(--white-color);
+    width: 300px;
+    height: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow:0 15px 25px #333;
+
+
+}
+.vite h4{
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(243, 148, 198);
+}
+.vite p{
+    text-align: center;
+}
+/*contact-nous*/
+.contact{
+    position: absolute;
+    top: 1700px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.info i{
+    font-size: 20px;
+}
+
+   
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    width: 500px;
+    height: 650px;
+    padding: 40px;
+    margin: 20px auto;
+    border: 2px solid #8fd1f7;
+   
+
+}
+.form p{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 0 30px;
+    padding: 0;
+
+}
+.form .info{
+    position: relative;
+}
+.form .info input{
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+    
+    
+}
+.form .info textarea{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-color);
+    border:2px solid #ccc ;
+    outline: none;
+    
+ }
+.form .info label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-color);
+    pointer-events: none;
+    transition: .5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form .info input:focus~label{
+    top: -25px;
+    left: 0;
+    color: var(--text-color);
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form .info textarea:focus~label:last-child{
+    top: -30px;
+    left: 0;
+    color: var(--text-color);
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.info button{
+  padding: .6em 1em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  background-color: var(--white-color);
+  text-transform: uppercase;
+  color: var(--text-color);
+  transition: all 1000ms;
+  font-size: 15px;
+  position: absolute;
+  top: 620px;
+  left: 6%;
+  overflow: hidden;
+  outline: 2px solid #eef2f3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+
+}
+.info button i{
+    font-weight: bold;
+    font-size: 25px;
+    justify-content: end;
+}
+.map{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+}
+
+
